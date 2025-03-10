@@ -1,0 +1,54 @@
+.UserManagementH {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.UserManagementH h3 {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.UserManagementH input {
+  padding: 10px;
+  width: 450px; /* Wider input field */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #222; /* Match the dark theme */
+  color: white;
+}
+
+.choiceboxuser select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  width: 150px; /* Adjusted size */
+}
+
+.UserManagementH button {
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: green;
+  color: white;
+  transition: 0.3s;
+  width: 180px;
+}
+
+.UserManagementH button:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}

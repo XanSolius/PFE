@@ -11,13 +11,13 @@ function LoginLabel(){
             <LoginActor/>
         </div>
         <div className="Input">
-            <label>Username</label>    
-            <input type="text" id="username" name="username" className="loginpass"/>
+            <label>Email</label>    
+            <input type="email" id="email" name="email" className="loginpass"/>
             <label>Password</label>
             <input type="password" id="password" name="password" className="loginpass" /> 
         </div>
         <div>
-            <button onClick={() => navigate("/page-two")}>Login</button>
+            <button onClick={() => navigate("/HomePageAdmin")}>Login</button>
         </div>
         <div className="ForgotPass"><a href ="#">Forgot Password ?</a></div>
         </label> 

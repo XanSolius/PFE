@@ -1,13 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./Pages/LoginPage";
-import PageTwo from "./Pages/PageTwo";
+import HomePageAdmin from "./Pages/HomePageAdmin";
+import UserManagementPage from "./Pages/UserManagePage";
+import AddUserPage from "./Pages/AddUserPage";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/Page-Two" element={<PageTwo />} />
+        <Route path="/HomePageAdmin" element={<HomePageAdmin />} />
+        <Route path="/UserManagePage" element={<UserManagementPage />} />
+        <Route path="/AddUserPage" element={<AddUserPage />} />
       </Routes>
     </Router>
   );
