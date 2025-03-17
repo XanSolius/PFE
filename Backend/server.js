@@ -31,14 +31,14 @@ const JWT_SECRET = process.env.JWT_SECRET || 'TFxansolius333@%';
 
 // 🔹 Login Route
 app.post('/login', async (req, res) => {
-    const { email, password, role } = req.body;
+    const { email, password } = req.body;
 
     try {
         // Check if user exists
-        const result = await pool.query('SELECT * FROM users WHERE email = $1 AND role = $2', [email, role]);
+        const result = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
 
         if (result.rows.length === 0) {
-            return res.status(401).json({ message: 'Invalid email or role ❌' });
+            return res.status(401).json({ message: 'Invalid email ❌' });
         }
 
         const user = result.rows[0];
@@ -50,9 +50,9 @@ app.post('/login', async (req, res) => {
         }
 
         // Generate JWT token
-        const token = jwt.sign({ userId: user.user_id, role: user.role }, JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ userId: user.user_id }, JWT_SECRET, { expiresIn: '1h' });
 
-        res.json({ message: 'Login successful ✅', token });
+        res.json({ message: 'Login successful ✅', token , role: user.role });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'Server error ❌' });

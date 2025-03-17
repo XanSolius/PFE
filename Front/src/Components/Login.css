@@ -25,7 +25,7 @@
   .Input {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 5px;
     width: 250px;
     height: 200px;
     font-weight: bold;
@@ -47,7 +47,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 20px;
   }
   
