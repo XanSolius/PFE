@@ -9,7 +9,7 @@ CREATE DATABASE pfe_db;
 
 -- Create the users table with updated constraints
 CREATE TABLE users (
-    user_id SERIAL PRIMARY KEY,
+    user_id NUMERIC PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL,
     role VARCHAR(50) NOT NULL,

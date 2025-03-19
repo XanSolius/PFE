@@ -26,7 +26,7 @@ function LoginLabel(){
                 if (data.role === "admin") {
                     navigate("/HomePageAdmin"); // Redirect to Admin Page
                 } else {
-                    navigate("/dashboard"); // Redirect to User Dashboard
+                    navigate("/EmployeeHomePage"); // Redirect to User Dashboard
                 }
             } else {
                 alert(data.message); // Show error message
@@ -40,7 +40,7 @@ function LoginLabel(){
     return(
        <>
        <label className="LoginCountainer">
-        <p style={{color:'black'}}>Welcome Back!</p>
+        <h4 style={{color:'black'}}>Welcome Back!</h4>
         <div className="Input">
             <label>Email</label>    
             <input style={{color:'black'}} type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="loginpass"/>
