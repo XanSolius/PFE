@@ -72,11 +72,11 @@
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  background-color: #28a745; /* Green background */
+  background-color: #0d902b; /* Green background */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  width: 60rem;
+  width: 55rem;
 }
 
 .UserManagementH button:hover {

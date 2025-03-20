@@ -1,0 +1,98 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: rgb(0, 162, 255);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .user-details p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .delete-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff1900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff1900;
+  }
+  
+  .close-button {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .close-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .confirmation-dialog {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #8e8e8e;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .confirmation-dialog p {
+    margin-bottom: 1rem;
+  }
+  
+  .confirmation-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .confirmation-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .confirmation-buttons button:first-child {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .confirmation-buttons button:first-child:hover {
+    background-color: #c0392b;
+  }
+  
+  .confirmation-buttons button:last-child {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .confirmation-buttons button:last-child:hover {
+    background-color: #2980b9;
+  }
